@@ -11,8 +11,12 @@
             "id": "aff6857a4c4af4a6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md"
+              }
             }
           }
         ]
@@ -139,5 +147,18 @@
     }
   },
   "active": "aff6857a4c4af4a6",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Spring24/STAT 330/Denotion.md",
+    "Spring24/STAT 330",
+    "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
+    "Spring24/COM S 418/Assignments",
+    "Spring24/COM S 418/2 Line Segment Intersection.md",
+    "Spring24/COM S 418/1 Computational Geometry.md",
+    "Spring24/COM S 418",
+    "Spring24/COM S 327/Makefiles.md",
+    "Spring24/COM S 327/Lecture 1.md",
+    "Spring24/COM S 327",
+    "Spring24",
+    "New folder"
+  ]
 }
