@@ -37,7 +37,7 @@ date and time: what you did
 	1/19 10am: started
 
 ```
-$ tar cvf director_name.tar.gz
+$ tar cvfz director_name.tar.gz
 ```
 z - calls gzip to compress
 c - create
@@ -58,7 +58,7 @@ v - verbose
 ## Assignment 1
 ### Easy way
 80x21 box
-use 80 of horizontal and 20 of vertical
+use 80 of horizontal and 21 of vertical
 must be random
 randomly make boxes with water, mountains, grass, etc then have a priority list
 There must be a border on the outside. use terrain that cant be moved through as a buffer (except for gates)
