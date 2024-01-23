@@ -36,3 +36,48 @@ $git log > CHANGELOG
 date and time: what you did
 	1/19 10am: started
 
+```
+$ tar cvf director_name.tar.gz
+```
+z - calls gzip to compress
+c - create
+
+.tar.gz = .tgz
+
+check to see if it worked. make tmp dir
+```
+mkdir tmp
+cd tmp
+tar xvfz ./tar_ball.tar.gz
+```
+x - expand
+f - force
+v - verbose
+
+
+## Assignment 1
+### Easy way
+80x21 box
+use 80 of horizontal and 20 of vertical
+must be random
+randomly make boxes with water, mountains, grass, etc then have a priority list
+There must be a border on the outside. use terrain that cant be moved through as a buffer (except for gates)
+choose position for gate on each wall (4 gates)
+for connecting gates connect opposite gates by choosing a x from gate 1 and y from gate 2 (can be random along these coordinates) $\frac{(y_{1}-y_{2})}{|y_{1}-y_{2}}|$
+if road goes through water or mountains then let it (it is either a bridge or pass)
+spots with nothing fill it with something
+
+#### pokimart
+next to the road
+### Better way
+#### terrain
+use priority queue
+put random points each with diff terrain
+grow around points putting the points into the queue. grow each point at the same time
+#### road
+take into account elevations
+smooth elevations between terrains
+use Dykstra's algo to navigate valleys to get to gates
+for stop from going around edge create penalty to encourage it to go to middle
+scatter trees around for fun
+NOTE: Takes 1500 lines of code
