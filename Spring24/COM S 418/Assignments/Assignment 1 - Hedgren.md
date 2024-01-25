@@ -47,7 +47,7 @@ algorithm based on another paradigm, namely divide-and-conquer.
 	
 	
 ## Question 1.9
-**Suppose that we have a subroutine CONVEXHULL available for computing the convex hull of a set of points in the plane. Its output is a list of convex hull vertices, sorted in clockwise order. Now let S = {x1 , x2 , . . . , xn } be a set of n numbers. Show that S can be sorted in O(n) time plus the time needed for one call to CONVEXHULL. Since the sorting problem has an Ω(n log n) lower bound, this implies that the convex hull problem has an Ω(n log n) lower bound as well. Hence, the algorithm presented in this chapter is asymptotically optimal.**
+**Suppose that we have a subroutine CONVEXHULL available for computing the convex hull of a set of points in the plane. Its output is a list of convex hull vertices, sorted in clockwise order. Now let S = {x1 , x2 , . . . , xn} be a set of n numbers. Show that S can be sorted in O(n) time plus the time needed for one call to CONVEXHULL. Since the sorting problem has an Ω(n log n) lower bound, this implies that the convex hull problem has an Ω(n log n) lower bound as well. Hence, the algorithm presented in this chapter is asymptotically optimal.**
 
 For every $x_i$ in $x_{1}, ..., x_{n}$ we can plot it on plane with the coordinates being $(x_{i},x_{i}^2)$, then use the CONVEXHULL subroutine to get the list of vertices. **Runtime: O(n) (for plotting the points) + CONVEXHULL runtime**.
 
