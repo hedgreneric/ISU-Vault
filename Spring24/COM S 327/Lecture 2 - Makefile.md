@@ -63,7 +63,7 @@ must be random
 randomly make boxes with water, mountains, grass, etc then have a priority list
 There must be a border on the outside. use terrain that cant be moved through as a buffer (except for gates)
 choose position for gate on each wall (4 gates)
-for connecting gates connect opposite gates by choosing a x from gate 1 and y from gate 2 (can be random along these coordinates) $\frac{(y_{1}-y_{2})}{|y_{1}-y_{2}}|$
+for connecting gates connect opposite gates by choosing a x from gate 1 and y from gate 2 (can be random along these coordinates) $\frac{(y_{1}-y_{2})}{|y_{1}-y_{2}|}$
 if road goes through water or mountains then let it (it is either a bridge or pass)
 spots with nothing fill it with something
 
