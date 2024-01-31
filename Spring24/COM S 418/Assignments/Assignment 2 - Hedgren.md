@@ -19,3 +19,5 @@ Eric Hedgren
 
 ## Question 3.2
 **A rectilinear polygon is a simple polygon of which all edges are horizontal  or vertical. Let P be a rectilinear polygon with n vertices. Give an example to show that  ⌊n/4⌋ cameras are sometimes necessary to guard it.**
+
+A simple square is an example of this. Since there are 4 vertices in a square, then there has to be $\lfloor\frac{4}{n} \rfloor$ = 1 camera to cover this area. Any less than 1 camera and it will not be covered. 
