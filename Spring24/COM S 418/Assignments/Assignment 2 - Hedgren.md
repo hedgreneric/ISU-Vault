@@ -18,4 +18,4 @@ Eric Hedgren
 **Let S be a set of n disjoint line segments in the plane, and let p be a point not on any of the line segments of S. We wish to determine all line segments of S that p can see, that is, all line segments of S that  contain some point q so that the open segment pq doesn’t intersect any p  not visible line segment of S. Give an O(n log n) time algorithm for this problem that uses a rotating half-line with its endpoint at p.**
 
 ## Question 3.2
-**A rectilinear polygon is a simple polygon of which all edges are horizontal  or vertical. Let P be a rectilinear polygon with n vertices. Give an example to show that  ⌊n/4⌋ cameras are sometimes necessary to guard it. **
+**A rectilinear polygon is a simple polygon of which all edges are horizontal  or vertical. Let P be a rectilinear polygon with n vertices. Give an example to show that  ⌊n/4⌋ cameras are sometimes necessary to guard it.**
