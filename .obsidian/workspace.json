@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aff6857a4c4af4a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6e2389ee396d0a0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 327/Lecture 6.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "3c1cb2ccec70d48f",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 327/Lecture 6.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 327/Lecture 6.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 327/Lecture 6.md"
+                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md"
               }
             }
           }
@@ -161,11 +148,12 @@
   },
   "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
-    "Spring24/COM S 327/Lecture 3.md",
+    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.pdf",
+    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
     "Spring24/COM S 327/Lecture 6.md",
+    "Spring24/COM S 327/Lecture 3.md",
     "Spring24/COM S 327/Lecture 2 - Makefile.md",
     "Spring24/COM S 327/Lecture 1.md",
-    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
     "Spring24/COM S 418/2 Line Segment Intersection.md",
     "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
     "Spring24/COM S 418/Assignments/DeleteMe.md",
