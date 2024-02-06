@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
+                "file": "Spring24/COM S 327/Strings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
+                "file": "Spring24/COM S 327/Strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
+                "file": "Spring24/COM S 327/Strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md"
+                "file": "Spring24/COM S 327/Strings.md"
               }
             }
           }
@@ -148,11 +148,19 @@
   },
   "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
-    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.pdf",
+    "Spring24/COM S 327/GDB and Valgrind.md",
+    "Spring24/COM S 327/Strings.md",
+    "Spring24/COM S 418/3 Polygon Triangulation.md",
+    "Spring24/STAT 330/Homework/Homework 1 - Hedgren.pdf",
+    "Spring24/STAT 330/Homework",
+    "images/Pasted image 20240204193246.png",
+    "images/Pasted image 20240204192447.png",
+    "Spring24/COM S 327/Lecture 2 - Makefile.md",
+    "Spring24/COM S 418/1 Computational Geometry.md",
     "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
+    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.pdf",
     "Spring24/COM S 327/Lecture 6.md",
     "Spring24/COM S 327/Lecture 3.md",
-    "Spring24/COM S 327/Lecture 2 - Makefile.md",
     "Spring24/COM S 327/Lecture 1.md",
     "Spring24/COM S 418/2 Line Segment Intersection.md",
     "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
@@ -160,7 +168,6 @@
     "Spring24/STAT 330/Lecture 8.md",
     "images/Pasted image 20240123164850.png",
     "images/Pasted image 20240123163836.png",
-    "Spring24/COM S 418/1 Computational Geometry.md",
     "Spring24/COM S 418/3 Doubly-Connected Edge List & Subdivision Overlay.md",
     "Spring24/STAT 330/Denotion.md",
     "Spring24/STAT 330",
