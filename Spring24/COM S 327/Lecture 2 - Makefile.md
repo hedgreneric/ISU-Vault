@@ -38,6 +38,7 @@ date and time: what you did
 
 ```
 $ tar cvfz director_name.tar.gz
+$ tar cvzf filename.tar.gz path/to/desired/file/
 ```
 z - calls gzip to compress
 c - create
