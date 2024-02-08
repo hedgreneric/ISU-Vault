@@ -34,11 +34,68 @@ To conclude, since there can't be more or less than n vertices within all the mo
 ## Question 4.8
 **The plane z = 1 can be used to represent all directions of vectors in 3-dimensional space that have a positive z-value. How can we represent all directions of vectors in 3-dimensional space that have a non-negative z-value? And how can we represent the directions of all vectors in 3-dimensional space?**
 
+To represent all directions in a space with non-negative x-value we can use a half-space a half-space define by $z=0$. This includes all vectors where $z \ge 0$.
 
+To represent the directions of all vectors in a 3-dimensional space we can use the entire space. In mathematical terms, this could be denoted as $\mathbb{R}^3$ which represent arbitrary values x, y, and z. 
 
 ## Question 4.10
 **Let H be a set of at least three half-planes with a non-empty intersection such that not all bounding lines are parallel. We call a half-plane h ∈ H redundant if it does not contribute an edge to 􏰅 H . Prove that for any redundant half-plane h ∈ H there are two half-planes h′ , h′′ ∈ H such that h′ ∩ h′′ ⊂ h. Give an O(n log n) time algorithm to compute all redundant half-planes.
+#### Proof
+
+Since H consists of at least three non-parallel half-planes and their intersection is non-empty denote such intersection as P.
+
+If h is redundant then P is the same intersection as H without h. Therefore, the must be an h' and h'' the excludes the added intersection area from h. Since h would only be adding onto P it must be a super-set of the intersection.
+
+Since h' and h'' are the half-planes cutting the area added by h off, and the $h' \cap h''$ is in P, then $h' \cap h'' \subset h$.
+
+Thus, we have proved that for any redundant half-plane h ∈ H there are two half-planes h′ , h′′ ∈ H such that h′ ∩ h′′ ⊂ h. 
+
+#### Algorithm
+
+Compute the convex hull of all the half-planes and keep track of the half-planes that are used
+
+```
+Algorithm INTERSECT_HALFPLANES(H)
+Input: A set H of n half-planes in the plane.
+Output: The convex polygonal region C := ⋂ h ∈ H h.
+
+1. if card(H) = 1
+2.    then C ← the unique half-plane h ∈ H
+3. else Split H into sets H1 and H2 of size ⌈n/2⌉ and ⌊n/2⌋.
+4.    C1 ← INTERSECT_HALFPLANES(H1)
+5.    C2 ← INTERSECT_HALFPLANES(H2)
+6.    C ← INTERSECT_CONVEX_REGIONS(C1, C2)
+```
+
+![[Pasted image 20240208160625.png]]
+*algorithm and image above are from the textbook: Computational Geometry: Algorithms and Applications by Otfried Cheong*
+
+```
+Algorithm INTERSECT_CONVEX_REGIONS(C1, C2)
+Input: 2 half-planes intersections
+Output: intersection of 2 convex regions
+
+new edge: e
+
+(sweep line algorithm)
+1. don't need a queue each event point can be found in constant time with the pointers usein the image above 
+2. check whether e belongs to C1 or C2 and whether it is the left or right boundary
+3. if p is the upper endpoint of e 
+	1. if p lies between the left and right edges of C2C2
+		1. e contributes an edge to CC starting at pp. Add the half-plane containing e to Lleft(C)Lleft​(C)
+	3. if e intersects the right edge of C2C2
+		1. check if p is to the right or left of the right edge of C2C2.
+			1. if both edges contribute an edge starting at the intersection point, add the half-plane defining ee to Lleft(C)Lleft​(C) and the half-plane defining the right edge of C2C2 to Lright(C)Lright​(C)
+	4. if ee intersects the left edge of C2C2
+		1. determine whether p is part of e or the left edge of C2C2
+			1. add the appropriate half-plane to Lleft(C)Lleft​(C)
 
 ```
 
-```
+The runtime of this part of the algorithm is O(n log n).
+
+After computing the convex polygon we can then get the set of every edge of the convex polygon then subtract it from the set of all half-planes, in other words:
+
+{all half-planes} - {all edges of convex polygon} = {redundant half-planes}
+
+The runtime of this part of the is O(n). Thus, the overall runtime of this algorithm is O(n log n).

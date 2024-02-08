@@ -31,3 +31,14 @@ incrementally add the half planes and keep finding the optimal solution using th
 ![[Pasted image 20240206113745.png]]
 
 
+# Randomized Linear Programming
+- A bad order leads to $O(n^2)$, but most is faster
+- randomize the order
+- ![[Pasted image 20240208110733.png]]
+- to generate random permutation
+	![[Pasted image 20240208111143.png]]
+	go in reverse order to 2 and choosing a random number less and the current position. then swap.
+
+## Backwards Analysis
+- look at the algorithm backwards
+- 
