@@ -29,7 +29,19 @@ To conclude, since there can't be more or less than n vertices within all the mo
 ## Question 4.2
 **Consider the casting problem in the plane: we are given polygon P and a 2-dimensional mold for it. Describe a linear time algorithm that decides whether P can be removed from the mold by a single translation.**
 
+```
+Input: Polygon P, Mold M
+Output: True if P can be removed from the mold by translating in direction d, otherwise False
 
+For each facet F (excluding the top facet) of P:
+    Calculate the outward normal N of F
+    Calculate the angle theta between d and N
+    If theta < pi/2:
+        Return False
+
+Return True
+
+```
 
 ## Question 4.8
 **The plane z = 1 can be used to represent all directions of vectors in 3-dimensional space that have a positive z-value. How can we represent all directions of vectors in 3-dimensional space that have a non-negative z-value? And how can we represent the directions of all vectors in 3-dimensional space?**
