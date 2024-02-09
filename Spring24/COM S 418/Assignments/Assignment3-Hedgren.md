@@ -18,7 +18,7 @@ This algorithm is O(n log n) runtime because O(n log n + n  + n) = O(n log n)
 
 ## Question 3.7
 
-**Let P be a simple polygon with n vertices, which has been partitioned into monotone pieces. Prove that the sum of the number of vertices of the pieces is O(n).
+**Let P be a simple polygon with n vertices, which has been partitioned into monotone pieces. Prove that the sum of the number of vertices of the pieces is O(n).**
 
 The diagonals produce no additional vertices, and all the monotone pieces lie within the polygon.
 
@@ -56,7 +56,7 @@ To represent the directions of all vectors in a 3-dimensional space we can use t
 
 ## Question 4.10
 
-**Let H be a set of at least three half-planes with a non-empty intersection such that not all bounding lines are parallel. We call a half-plane h ∈ H redundant if it does not contribute an edge to 􏰅 H . Prove that for any redundant half-plane h ∈ H there are two half-planes h′ , h′′ ∈ H such that h′ ∩ h′′ ⊂ h. Give an O(n log n) time algorithm to compute all redundant half-planes.
+**Let H be a set of at least three half-planes with a non-empty intersection such that not all bounding lines are parallel. We call a half-plane h ∈ H redundant if it does not contribute an edge to 􏰅 H . Prove that for any redundant half-plane h ∈ H there are two half-planes h′ , h′′ ∈ H such that h′ ∩ h′′ ⊂ h. Give an O(n log n) time algorithm to compute all redundant half-planes.**
 #### Proof
 
 Since H consists of at least three non-parallel half-planes and their intersection is non-empty denote such intersection as P.
