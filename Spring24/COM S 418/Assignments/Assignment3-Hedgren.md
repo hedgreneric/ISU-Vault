@@ -2,6 +2,7 @@
 Eric Hedgren
 
 ## Question 3.6
+
 **Give an algorithm that computes in O(n log n) time a diagonal that splits a simple polygon with n vertices into two simple polygons each with at most ⌊2n/3⌋ + 2 vertices. Hint: Use the dual graph of a triangulation.**
 
 1. triangulate the simple polygons
@@ -16,6 +17,7 @@ This algorithm is O(n log n) runtime because O(n log n + n  + n) = O(n log n)
 
 
 ## Question 3.7
+
 **Let P be a simple polygon with n vertices, which has been partitioned into monotone pieces. Prove that the sum of the number of vertices of the pieces is O(n).
 
 The diagonals produce no additional vertices, and all the monotone pieces lie within the polygon.
@@ -27,6 +29,7 @@ Case 2: Suppose that the sum is n + 1 vertices. This can't be done as there are 
 To conclude, since there can't be more or less than n vertices within all the monotone pieces there must be n vertices.
 
 ## Question 4.2
+
 **Consider the casting problem in the plane: we are given polygon P and a 2-dimensional mold for it. Describe a linear time algorithm that decides whether P can be removed from the mold by a single translation.**
 
 ```
@@ -44,6 +47,7 @@ Return True
 ```
 
 ## Question 4.8
+
 **The plane z = 1 can be used to represent all directions of vectors in 3-dimensional space that have a positive z-value. How can we represent all directions of vectors in 3-dimensional space that have a non-negative z-value? And how can we represent the directions of all vectors in 3-dimensional space?**
 
 To represent all directions in a space with non-negative x-value we can use a half-space a half-space define by $z=0$. This includes all vectors where $z \ge 0$.
@@ -51,6 +55,7 @@ To represent all directions in a space with non-negative x-value we can use a ha
 To represent the directions of all vectors in a 3-dimensional space we can use the entire space. In mathematical terms, this could be denoted as $\mathbb{R}^3$ which represent arbitrary values x, y, and z. 
 
 ## Question 4.10
+
 **Let H be a set of at least three half-planes with a non-empty intersection such that not all bounding lines are parallel. We call a half-plane h ∈ H redundant if it does not contribute an edge to 􏰅 H . Prove that for any redundant half-plane h ∈ H there are two half-planes h′ , h′′ ∈ H such that h′ ∩ h′′ ⊂ h. Give an O(n log n) time algorithm to compute all redundant half-planes.
 #### Proof
 
