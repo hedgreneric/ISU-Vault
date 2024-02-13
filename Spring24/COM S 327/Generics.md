@@ -61,7 +61,7 @@ void insertion_sort(void *v, int s, int n,
 insertion_sort(s, sizeof(char), strlen(s), cmp_chars);
 
 //(void *) casts function to pointer of whatever type the function is
-ex. (void*) strcmp
+ex. (void*) strcmp doesnt work
 ```
 
 ```
