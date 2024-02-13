@@ -2,7 +2,7 @@
 Eric Hedgren
 
 ## Question 4.12
-**Prove that RANDOMPE R MUTAT I ON(A) is correct, that is, prove that every 
+**Prove that RandomPermutation(A) is correct, that is, prove that every 
 possible permutation of A is equally likely to be the output. Also show that 
 the algorithm is no longer correct (it no longer produces every permutation 
 with equal probability) if we change the k in line 2 to n.**
@@ -19,7 +19,7 @@ if card(A)= 1
 	then return the unique element x element in A
 else pick a random element x from A
 	x <- ParanoudMaximum(A / {x})
-	if x (DONT KNOW SYMBOL) x'
+	if x <= x'
 		then return x'
 		else Now we suspect that x is the maximum, but to be absolutely           sure, we compare x with all card(a) - 1 other elements of A
 		return x
@@ -37,7 +37,9 @@ that for any point p in P the line segment pq is contained in P. Give
 an algorithm whose expected running time is linear to decide whether a 
 simple polygon is star-shaped.**
 
+```
 
+```
 
 
 ## Question 4.16
