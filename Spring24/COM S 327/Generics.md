@@ -26,7 +26,11 @@ a = malloc();
 *cmp function that takes 2 void* parameter and returns pointer to int
 (*cmp) pointer to function that returns int
 int (* cmp)(const void* v1, const void* v2) {
-	return *((int *)) v1 - *((int *)) v2;
+	return (*((int *)) v1) - (*((int *)) v2);
+}
+
+int cmp_chars (const void *v1, const void* v2){
+	return (*((char *)) v1) - (*((char *)) v2);
 }
 
 
@@ -54,7 +58,10 @@ void insertion_sort(void *v, int s, int n,
 	free(t);
 }
 
+insertion_sort(s, sizeof(char), strlen(s), cmp_chars);
 
+//(void *) casts function to pointer of whatever type the function is
+ex. (void*) strcmp
 ```
 
 ```
