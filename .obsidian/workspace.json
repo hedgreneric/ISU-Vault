@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
+                "file": "Spring24/COM S 327/strings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
+                "file": "Spring24/COM S 327/strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
+                "file": "Spring24/COM S 327/strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md"
+                "file": "Spring24/COM S 327/strings.md"
               }
             }
           }
@@ -148,15 +148,16 @@
   },
   "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
+    "Spring24/COM S 327/Lecture 2 - Makefile.md",
+    "Spring24/COM S 327/strings.md",
+    "Spring24/COM S 327/GDB and Valgrind.md",
+    "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
     "images/Pasted image 20240208160625.png",
     "Spring24/COM S 418/3 Linear Programming in 2D.md",
-    "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
     "images/Pasted image 20240208111143.png",
     "images/Pasted image 20240208110733.png",
     "Spring24/COM S 327/Dijkstras.md",
     "Spring24/COM S 327/Untitled.md",
-    "Spring24/COM S 327/Lecture 2 - Makefile.md",
-    "Spring24/COM S 327/GDB and Valgrind.md",
     "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
     "images/Pasted image 20240206113745.png",
     "images/Pasted image 20240206112806.png",
@@ -165,7 +166,6 @@
     "images/Pasted image 20240206112523.png",
     "images/Pasted image 20240206112111.png",
     "images/Pasted image 20240206111103.png",
-    "images/Pasted image 20240206110941.png",
     "Spring24/COM S 327/Strings.md",
     "Spring24/COM S 418/3 Polygon Triangulation.md",
     "Spring24/STAT 330/Homework/Homework 1 - Hedgren.pdf",
