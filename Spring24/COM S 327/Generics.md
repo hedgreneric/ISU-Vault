@@ -33,6 +33,10 @@ int cmp_chars (const void *v1, const void* v2){
 	return (*((char *)) v1) - (*((char *)) v2);
 }
 
+int compare_strings(const void *v1, const void *v2) {
+	return srtcmp(*(char **)v1, *(char **)v2);
+}
+
 
 GENERIC
 // s is the size of an element that a points to

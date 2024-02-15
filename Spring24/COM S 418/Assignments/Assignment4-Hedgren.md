@@ -20,7 +20,7 @@ if card(A)= 1
 else pick a random element x from A
 	x <- ParanoudMaximum(A / {x})
 	if x <= x'
-		then return x'
+		then return x
 		else Now we suspect that x is the maximum, but to be absolutely           sure, we compare x with all card(a) - 1 other elements of A
 		return x
 ```

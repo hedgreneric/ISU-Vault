@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+                "file": "Spring24/COM S 327/Generics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2026e7130d54b33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring24/COM S 327/Read and Write.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+                "file": "Spring24/COM S 327/Read and Write.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+                "file": "Spring24/COM S 327/Read and Write.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md"
+                "file": "Spring24/COM S 327/Read and Write.md"
               }
             }
           }
@@ -146,21 +159,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6e2389ee396d0a0a",
+  "active": "b2026e7130d54b33",
   "lastOpenFiles": [
-    "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
-    "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
-    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
     "Spring24/COM S 327/Generics.md",
-    "Spring24/COM S 327/strings.md",
+    "Spring24/COM S 327/Read and Write.md",
+    "Spring24/COM S 327/1.04 data structure.md",
+    "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
     "Spring24/COM S 327/Lecture 2 - Makefile.md",
+    "Spring24/COM S 327/Untitled.md",
     "Spring24/COM S 327/GDB and Valgrind.md",
+    "Spring24/COM S 327/Dijkstras.md",
+    "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
+    "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
+    "Spring24/COM S 327/strings.md",
     "images/Pasted image 20240208160625.png",
     "Spring24/COM S 418/3 Linear Programming in 2D.md",
     "images/Pasted image 20240208111143.png",
     "images/Pasted image 20240208110733.png",
-    "Spring24/COM S 327/Dijkstras.md",
-    "Spring24/COM S 327/Untitled.md",
     "images/Pasted image 20240206113745.png",
     "images/Pasted image 20240206112806.png",
     "images/Pasted image 20240206112751.png",
