@@ -38,14 +38,22 @@ else pick a random element x from A
 	x' <- ParanoudMaximum(A / {x})
 	if x <= x'
 		then return x'
-		else Now we suspect that x is the maximum, but to be absolutely
-			sure, we compare x with all card(a) - 1 other elements of A
-			return x
+	else Now we suspect that x is the maximum, but to be absolutely
+		sure, we compare x with all card(a) - 1 other elements of A
+		return x
 ```
 What is the worst-case running time of this algorithm? What is the 
 expected running time (with respect to the random choice in line 3)? 
 
+Worst case runtime:
+$T(n) = T(n - 1) + O(n)$
+This results in a worst case runtime of $O(n^2)$.
 
+Another reasoning for this worst case runtime could be: we chose the largest element the each time, so since x > x' we always do the else which is comparing x to the rest of the elements. We keep doing this until we get down to one element. Therefore, we are iterating through each element by calling it recursively until we get to 1 last element and since x is the largest element each time we do the inner else which compares x to every other card.
+
+Expected runtime:
+$E(T(n))=T(n-1)+O(n)$
+This results in an expected runtime of $O(n^2)$
 
 
 
@@ -78,7 +86,7 @@ Output: True is it meets star-shaped criteria, otherwise false
 
 This algorithm uses the 2DRandomizedBoundedLP from the textbook, which the expected runtime is linear. This is modified to return false if the linear program is infeasible, and true if it is feasible.
 
-This determines whether P is star-shaped or not because if there is an intersection of all the edges being half-spaces with a point inside that is valid, then that point will be able to connect with all the points in P without going outside P
+This determines whether P is star-shaped or not because if there is an intersection of all the edges being half-spaces with a point inside that is valid, then that point will be able to connect with all the points in P without going outside P.
 
 ## Question 4.16
 **On n parallel railway tracks n trains are going with constant speeds v1 , 
