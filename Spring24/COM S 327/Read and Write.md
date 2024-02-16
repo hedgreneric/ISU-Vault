@@ -25,7 +25,7 @@ int main (int argc, char *argv[]) {
 		}
 	}
 
-	switch(a) {
+	switch(a) { // NEED EVERY POSSIBLE or default
 	case read_text:
 		break;
 	case write-text:
