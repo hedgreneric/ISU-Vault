@@ -76,6 +76,9 @@ Output: True is it meets star-shaped criteria, otherwise false
 	return true
 ```
 
+This algorithm uses the 2DRandomizedBoundedLP from the textbook, which the expected runtime is linear. This is modified to return false if the linear program is infeasible, and true if it is feasible.
+
+This determines whether P is star-shaped or not because if there is an intersection of all the edges being half-spaces with a point inside that is valid, then that point will be able to connect with all the points in P without going outside P
 
 ## Question 4.16
 **On n parallel railway tracks n trains are going with constant speeds v1 , 
