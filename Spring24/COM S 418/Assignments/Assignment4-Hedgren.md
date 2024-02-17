@@ -55,7 +55,7 @@ Expected runtime:
 $E(T(n))=T(n-1)+O(n)$
 This results in an expected runtime of $O(n^2)$
 
-
+50% of the randomly chosen elements will be above x', so this will reduce the amount of times that x compares with rest of elements in A by 50%. This still results about the same runtime as the worst case.
 
 ## Question 4.15
 **A simple polygon P is called star-shaped if it contains a point q such 
@@ -97,7 +97,8 @@ of half-planes.**
 
 ```
 Algorithm: LeadingTrains(trains' half_planes)
-Input: the trains half_planes are calculated by y >= vi * t + ki (where i is the ith train)
+Input: the trains half_planes are calculated by y >= vi * t + ki
+(where i is the ith train)
 Output: array of all the trains that lead a some point
 
 	denote trains a h where (h_i is the ith train)

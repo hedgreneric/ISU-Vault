@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md"
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md"
               }
             }
           }
@@ -161,11 +161,16 @@
   },
   "active": "b2026e7130d54b33",
   "lastOpenFiles": [
+    "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+    "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
+    "Spring24/COM S 418/5 Orthogonal Range Searching.md",
+    "images/Pasted image 20240217150611.png",
+    "images/Pasted image 20240217144814.png",
+    "images/Pasted image 20240217144036.png",
     "Spring24/COM S 418/Kd-Trees.md",
     "Spring24/COM S 327/Read and Write.md",
     "Spring24/COM S 327/Generics.md",
     "Spring24/COM S 327/1.04 data structure.md",
-    "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
     "Spring24/COM S 327/Lecture 2 - Makefile.md",
     "Spring24/COM S 327/Untitled.md",
     "Spring24/COM S 327/GDB and Valgrind.md",
@@ -181,9 +186,6 @@
     "images/Pasted image 20240206112806.png",
     "images/Pasted image 20240206112751.png",
     "images/Pasted image 20240206112629.png",
-    "images/Pasted image 20240206112523.png",
-    "images/Pasted image 20240206112111.png",
-    "images/Pasted image 20240206111103.png",
     "Spring24/COM S 327/Strings.md",
     "Spring24/COM S 418/3 Polygon Triangulation.md",
     "Spring24/STAT 330/Homework/Homework 1 - Hedgren.pdf",
@@ -198,7 +200,6 @@
     "Spring24/COM S 418/Assignments/DeleteMe.md",
     "Spring24/STAT 330/Lecture 8.md",
     "Spring24/COM S 418/3 Doubly-Connected Edge List & Subdivision Overlay.md",
-    "Spring24/STAT 330/Denotion.md",
     "Spring24/STAT 330",
     "Spring24/COM S 418/Assignments",
     "Spring24/COM S 418",
