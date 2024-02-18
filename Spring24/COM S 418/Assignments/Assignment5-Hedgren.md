@@ -5,11 +5,7 @@ Eric Hedgren
 **In the proof of the query time of the kd-tree we found the following
 recurrence:**
 
-Q(n) =
-{
-$O(1)$, if n =1
-$2 + 2Q(n/4)$, if n > 1
-}
+![[Pasted image 20240218161926.png]]
 
 **Prove that this recurrence solves to $Q(n) = Q(\sqrt{n})$. Also show that
 $Ω(\sqrt{n})$ is a lower bound for querying in a kd-tree by defining a set of n
