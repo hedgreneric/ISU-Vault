@@ -26,7 +26,13 @@ For this recurrence, $f(n) = O(n^{0.5 - \epsilon})$ where epsilon equal 0.5.
 Since $log_{42}= 0.5$ and according to Master's Theorem $Q(n) = O(n^{log_ab})$, then $Q(n) = O(\sqrt{n})$.
 
 PART 2:
+Construct a 2D graph with point going from (0,0) to the to right linearly (slope is 1). When using the querying rectangle use it to contain all the child of the "root node" for the subtree and the children of the children ans so on (essentially recursively getting all the nodes under the current root). If it is at the desired leaf then just have the rectangle contain the leaf.
 
+The depth of the kd-tree will always be at most $\sqrt{n}$ where n is the number of points, in other words the rectangle will always change what is encompassing $\sqrt{n}$ number of times.
+
+So when the square root is not a nice number then it will have the depth of the next whole $\sqrt{n}$. This means that no matter what querying will always take $\sqrt{n}$ time because we always have to search through $\sqrt{n}$ nodes. 
+
+Therefore, the upper bound is $O(\sqrt{n})$, but the lower bound is also $\Omega(\sqrt{n})$.
 
 ## Question 5.2
 **Describe algorithms to insert and delete points from a kd-tree. In your algorithm you do not need to take care of rebalancing the structure.**
