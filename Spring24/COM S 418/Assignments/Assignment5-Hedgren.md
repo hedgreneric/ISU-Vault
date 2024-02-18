@@ -7,9 +7,25 @@ recurrence:**
 
 ![[Pasted image 20240218161926.png]]
 
-**Prove that this recurrence solves to $Q(n) = Q(\sqrt{n})$. Also show that
+**Prove that this recurrence solves to $Q(n) = O(\sqrt{n})$. Also show that
 $Ω(\sqrt{n})$ is a lower bound for querying in a kd-tree by defining a set of n
 points and a query rectangle appropriately.**
+
+PART 1:
+To prove that $Q(n) = O(\sqrt{n})$ we can use Master's Theorem. For the given recurrence:
+- a = 2 (number of sub problems)
+- b = 4 (the factor by which the problem size is reduced)
+- f(n) = 2 (the cost of dividing the problem and combining the results)
+
+Compare f(n) with $n^{log_{b} a}$, f(n) = 2 is smaller than $n^{0.5}$. Therefore, according to Master's Theorem, this recurrence falls into case 1.
+
+Case 1: if $f(n) = O(n^{log_{b} a - \epsilon})$ for some constant $\epsilon > 0$. Then $Q(n) = O(n^{log_ba})$.
+
+For this recurrence, $f(n) = O(n^{0.5 - \epsilon})$ where epsilon equal 0.5.
+
+Since $log_{42}= 0.5$ and according to Master's Theorem $Q(n) = O(n^{log_ab})$, then $Q(n) = O(\sqrt{n})$.
+
+PART 2:
 
 
 ## Question 5.2
