@@ -30,7 +30,7 @@ Construct a 2D graph with point going from (0,0) to the to right linearly (slope
 
 The depth of the kd-tree will always be at most $\sqrt{n}$ where n is the number of points, in other words the rectangle will always change what is encompassing $\sqrt{n}$ number of times.
 
-So when the square root is not a nice number then it will have the depth of the next whole $\sqrt{n}$. This means that no matter what querying will always take $\sqrt{n}$ time because we always have to search through $\sqrt{n}$ nodes. 
+So when the square root is not a nice number then it will have the depth of the next whole $\sqrt{n}$. This means that no matter what querying will always take $\lceil\sqrt{n}\rceil$ time because we always have to search through $\lceil\sqrt{n}\rceil$ nodes. 
 
 Therefore, the upper bound is $O(\sqrt{n})$, but the lower bound is also $\Omega(\sqrt{n})$.
 
