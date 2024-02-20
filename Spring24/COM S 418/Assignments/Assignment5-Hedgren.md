@@ -112,3 +112,7 @@ Every internal node and leaf use O(1) storage, thus the total amount of storage 
 
 ### a)
 **Show that the query time for range queries with triangles is linear in the worst case, even if no answers are reported at all. Hint: Choose all points to be stored in the kd-tree on the line y = x.**
+
+Let all the points in the kd-tree form a linear line, that is let y=x. Lets say we are trying to find all points that are in the interval (2,2) to (5,5). When performing a range query for this we essentially have to find all points that lie in the interval 2 to 5, because y = x.
+
+Since the kd-tree is essentially a 1D tree along this line, querying for points within the range is equivalent to iterating through a 1D array and finding the points within the interval. This operation takes linear time. Therefore, since the kd-tree is essentially a 1D array the query time for finding the points in the interval also takes linear time at its worst case, even if no points are reported.

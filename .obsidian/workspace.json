@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 327/macros.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 327/macros.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 327/macros.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 327/macros.md"
+                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "b2026e7130d54b33",
   "lastOpenFiles": [
-    "Spring24/COM S 327/1.04 data structure.md",
     "Spring24/COM S 327/macros.md",
+    "Spring24/COM S 327/1.04 data structure.md",
     "Spring24/COM S 327/Read and Write.md",
     "Spring24/COM S 327/Lecture 6.md",
     "Spring24/COM S 327/Dijkstras.md",
