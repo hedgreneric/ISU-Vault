@@ -43,8 +43,31 @@ int main (int argc, char *argv[]) {
 		fprint(f, "%d %f\n", s. s.f);
 		break;
 	case read_binary:
+		if(!(f = fopen("binaryfile", "rb"))) {
+			perror("binaryfile");
+			return -1;
+		}
+		if (fread(&s, sizeof(s), f, 1) != 1) {
+			perror("binaryfile");
+			
+			return -1;
+		}
+		printf(" %d %f\n", s.i, s.f);
 		break;
 	case write_binary:
+		/* b suppresses character return before newline in Windows
+		* ignored elsewhere. b was introduced with C99, which is not
+		* well supported.*/
+		if(!(f = fopen("binaryfile", "wb"))) {
+			perror("binaryfile");
+			return -1;
+		}
+		if (fwrite(&s, sizeof(s), f, 1) != 1) {
+			perror("binaryfile");
+			
+			return -1;
+		}
+		
 		break;
 	case invalid_action:
 		fprintf("Usage: ...");
