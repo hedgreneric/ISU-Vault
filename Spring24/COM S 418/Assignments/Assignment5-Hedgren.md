@@ -98,7 +98,16 @@ Every internal node and leaf use O(1) storage, thus the total amount of storage 
 ### a)
 **Show that 2-dimensional kd-trees can answer partial match queries in $O(\sqrt{n} + k)$ time, where k is the number of reported answers.**
 
+Assume that in this example the specified value is an x-coordinate
+1. Search for the specified coordinate
+	start at node and traverse down the tree until we reach the a leaf node or the internal node with the specified x-coordinate
+2. collect all the points with the same x-coordinate
+	1. once we reach the specified x-coordinate go to the left child and collect all the leaves with the specified x coordinate
+	2. if the left child is another internal node traverse both children of that node as it is a y-coordinate node. 
+	3. continue traversing until we reach a leaf for every branch that we have created, but ensure that the specified x-coordinate is in bounds of the other x-coordinates internal nodes that we traverse
 
+Runtime analysis:
+The depth of the kd-tree is $\sqrt{n}$, so each time it traverses down, it does so with a depth of at most $\sqrt{n}$. After finding the internal node with the specified x-coordinate it takes O(k) time to find the points with specified x-coordinate and report them.
 ### b)
 **Explain how to use a 2-dimensional range tree to answer partial match queries. What is the resulting query time?**
 
