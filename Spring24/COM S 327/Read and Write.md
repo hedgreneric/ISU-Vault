@@ -24,11 +24,23 @@ int main (int argc, char *argv[]) {
 			}
 		}
 	}
+	FILE *f;
 
 	switch(a) { // NEED EVERY POSSIBLE or default
 	case read_text:
+		if(!(f = fopen("textfile", "r"))) {
+			perror("textfile");
+			return -1;
+		}
+		fscanf(f, "%d %f\n", &s.i, &s.f);
+		fprint("%d %f\n", s. s.f);
 		break;
-	case write-text:
+	case write_text:
+		if(!(f = fopen("textfile", "w"))) {
+			perror("textfile");
+			return -1;
+		}
+		fprint(f, "%d %f\n", s. s.f);
 		break;
 	case read_binary:
 		break;

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
+                "file": "Spring24/COM S 327/Read and Write.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
+                "file": "Spring24/COM S 327/Read and Write.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
+                "file": "Spring24/COM S 327/Read and Write.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md"
+                "file": "Spring24/COM S 327/Read and Write.md"
               }
             }
           }
@@ -161,10 +161,15 @@
   },
   "active": "b2026e7130d54b33",
   "lastOpenFiles": [
+    "Spring24/COM S 327/Lecture 6.md",
+    "Spring24/COM S 327/Dijkstras.md",
+    "Spring24/COM S 327/1.04 data structure.md",
+    "Spring24/COM S 327/Untitled 1.md",
+    "Spring24/COM S 327/Untitled.md",
+    "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
     "images/Pasted image 20240218161926.png",
     "images/Pasted image 20240218160956.png",
     "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
-    "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
     "Spring24/COM S 418/5 Orthogonal Range Searching.md",
     "images/Pasted image 20240217150611.png",
     "images/Pasted image 20240217144814.png",
@@ -172,11 +177,8 @@
     "Spring24/COM S 418/Kd-Trees.md",
     "Spring24/COM S 327/Read and Write.md",
     "Spring24/COM S 327/Generics.md",
-    "Spring24/COM S 327/1.04 data structure.md",
     "Spring24/COM S 327/Lecture 2 - Makefile.md",
-    "Spring24/COM S 327/Untitled.md",
     "Spring24/COM S 327/GDB and Valgrind.md",
-    "Spring24/COM S 327/Dijkstras.md",
     "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
     "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.md",
     "Spring24/COM S 327/strings.md",
@@ -186,14 +188,12 @@
     "images/Pasted image 20240208110733.png",
     "images/Pasted image 20240206113745.png",
     "images/Pasted image 20240206112806.png",
-    "images/Pasted image 20240206112751.png",
     "Spring24/COM S 327/Strings.md",
     "Spring24/COM S 418/3 Polygon Triangulation.md",
     "Spring24/STAT 330/Homework/Homework 1 - Hedgren.pdf",
     "Spring24/STAT 330/Homework",
     "Spring24/COM S 418/1 Computational Geometry.md",
     "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.pdf",
-    "Spring24/COM S 327/Lecture 6.md",
     "Spring24/COM S 327/Lecture 3.md",
     "Spring24/COM S 327/Lecture 1.md",
     "Spring24/COM S 418/2 Line Segment Intersection.md",
