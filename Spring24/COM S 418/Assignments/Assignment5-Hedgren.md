@@ -130,10 +130,10 @@ To achieve this we can use a technique called fractional cascading.
 	- Arrays A(ν)A(ν) are sorted on the y-coordinate of the points.
 	- Each entry in an array A(ν)A(ν) stores two pointers: one to A(lc(ν))A(lc(ν)) and one to A(rc(ν))A(rc(ν)).
 2. Query Process:
-	- To answer a query with a range [x:x′]×[y:y′][x:x′]×[y:y′], perform a binary search on the x-coordinates in the main tree to find nodes whose canonical subsets together contain the points with x-coordinates in the range [x:x′][x:x′].
-	- At the split point νsplitνsplit​, find the entry in A(νsplit)A(νsplit​) whose y-coordinate is the smallest one larger than or equal to yy.
+	- To answer a query with a range [x:x′]×[y:y′], perform a binary search on the x-coordinates in the main tree to find nodes whose canonical subsets together contain the points with x-coordinates in the range [x:x′].
+	- At the split point νsplitνsplit​, find the entry in A(νsplit)A(νsplit​) whose y-coordinate is the smallest one larger than or equal to y.
 	- Maintain the entries in the associated arrays along the search paths to xx and x′x′ that have y-coordinates larger than or equal to yy.
-	- For each selected node νν, report the points in A(ν)A(ν) whose y-coordinate is in the range [y:y′][y:y′]. This is done efficiently using the maintained information along the search paths.
+	- For each selected node νν, report the points in A(ν)A(ν) whose y-coordinate is in the range [y:y′]. This is done efficiently using the maintained information along the search paths.
 	- The total query time is O(log⁡n+k)O(logn+k), where kk is the number of reported answers.
 By storing pointers from entries in A(ν)A(ν) to entries in A(lc(ν))A(lc(ν)) and A(rc(ν))A(rc(ν)), Fractional Cascading avoids the need for a second binary search in A(lc(ν))A(lc(ν)) when processing A(ν)A(ν). The pointers help efficiently navigate through the associated arrays and reduce the query time.
 ## Question 5.5

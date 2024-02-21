@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 327/Generics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b2026e7130d54b33",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b2026e7130d54b33",
+  "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
-    "Spring24/COM S 418/5 Orthogonal Range Searching.md",
+    "Spring24/COM S 327/Generics.md",
+    "[.md",
     "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
+    "Spring24/COM S 418/5 Orthogonal Range Searching.md",
     "Spring24/COM S 418/Kd-Trees.md",
     "Spring24/COM S 327/macros.md",
     "Spring24/COM S 327/1.04 data structure.md",
@@ -176,7 +165,6 @@
     "images/Pasted image 20240217150611.png",
     "images/Pasted image 20240217144814.png",
     "images/Pasted image 20240217144036.png",
-    "Spring24/COM S 327/Generics.md",
     "Spring24/COM S 327/Lecture 2 - Makefile.md",
     "Spring24/COM S 327/GDB and Valgrind.md",
     "Spring24/COM S 418/Assignments/Assignment3-Hedgren.md",
@@ -199,7 +187,6 @@
     "Spring24/COM S 418/2 Line Segment Intersection.md",
     "Spring24/COM S 418/Assignments/Assignment 1 - Hedgren.md",
     "Spring24/COM S 418/Assignments/DeleteMe.md",
-    "Spring24/STAT 330/Lecture 8.md",
     "Spring24/STAT 330",
     "Spring24/COM S 418/Assignments",
     "Spring24/COM S 418",
