@@ -111,11 +111,31 @@ The depth of the kd-tree is $\sqrt{n}$, so each time it traverses down, it does 
 ### b)
 **Explain how to use a 2-dimensional range tree to answer partial match queries. What is the resulting query time?**
 
+Assume that in this example that he partial match query is looking for a range of x-coordinates.
 
+First, construct the range tree as we normally would. This involves building a balanced binary search tree (BST) for each dimension. For the first dimension (x-axis), sort the points based on their x-coordinates, and construct the BST. For each node in the BST construct a second BST for the second dimension (y-axis).
+
+Querying:
+Start at the root node of the x-coordinate BST and perform a binary search to find the node with the specified x-coordinate. Once the node is found, traverse the corresponding y-coordinate BST to collect all the points with the specified x-coordinate.
+
+Runtime analysis:
+The runtime for querying is $O(log^2n+k)$. The $log^2n$ comes from traversing both dimension's BST and the k is for collecting and reporting essentially all the leaves in the y-coordinate BST.
 ### c)
 **Describe a data structure that uses linear storage and solves 2-dimensional partial match queries in $O(log n + k)$ time.**
 
+To achieve this we can use a technique called fractional cascading.
 
+1. Main Tree Construction:
+	- Build a layered range tree where each canonical subset P(ν)P(ν) is stored in an associated array A(ν)A(ν).
+	- Arrays A(ν)A(ν) are sorted on the y-coordinate of the points.
+	- Each entry in an array A(ν)A(ν) stores two pointers: one to A(lc(ν))A(lc(ν)) and one to A(rc(ν))A(rc(ν)).
+2. Query Process:
+	- To answer a query with a range [x:x′]×[y:y′][x:x′]×[y:y′], perform a binary search on the x-coordinates in the main tree to find nodes whose canonical subsets together contain the points with x-coordinates in the range [x:x′][x:x′].
+	- At the split point νsplitνsplit​, find the entry in A(νsplit)A(νsplit​) whose y-coordinate is the smallest one larger than or equal to yy.
+	- Maintain the entries in the associated arrays along the search paths to xx and x′x′ that have y-coordinates larger than or equal to yy.
+	- For each selected node νν, report the points in A(ν)A(ν) whose y-coordinate is in the range [y:y′][y:y′]. This is done efficiently using the maintained information along the search paths.
+	- The total query time is O(log⁡n+k)O(logn+k), where kk is the number of reported answers.
+By storing pointers from entries in A(ν)A(ν) to entries in A(lc(ν))A(lc(ν)) and A(rc(ν))A(rc(ν)), Fractional Cascading avoids the need for a second binary search in A(lc(ν))A(lc(ν)) when processing A(ν)A(ν). The pointers help efficiently navigate through the associated arrays and reduce the query time.
 ## Question 5.5
 **Algorithm SearchKdTree can also be used when querying with other ranges than rectangles. For example, a query is answered correctly if the range is a triangle.**
 
