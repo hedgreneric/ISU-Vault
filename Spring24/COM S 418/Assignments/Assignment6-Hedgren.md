@@ -45,3 +45,4 @@ A 2-dimensional version can be given as follows: Store a set S of n non-crossing
 
 **Can you do the same when the segments are allowed to intersect each
 other?**
+
