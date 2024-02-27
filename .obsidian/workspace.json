@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
+                "file": "Spring24/COM S 418/ncurses.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
+                "file": "Spring24/COM S 418/ncurses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
+                "file": "Spring24/COM S 418/ncurses.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md"
+                "file": "Spring24/COM S 418/ncurses.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
-    "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
     "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
+    "Spring24/COM S 418/ncurses.md",
+    "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
     "Spring24/COM S 327/macros.md",
     "Spring24/COM S 327/stdarg.md",
     "[.md",
@@ -186,7 +187,6 @@
     "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.pdf",
     "Spring24/COM S 327/Lecture 3.md",
     "Spring24/COM S 327/Lecture 1.md",
-    "Spring24/COM S 418/2 Line Segment Intersection.md",
     "Spring24/STAT 330",
     "Spring24/COM S 418/Assignments",
     "Spring24/COM S 418",
