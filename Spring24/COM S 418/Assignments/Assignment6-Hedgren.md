@@ -50,30 +50,37 @@ A range tree is a binary tree for the first dimension, then another binary tree 
 ### (a)
 **Describe how a 1-dimensional range tree can be adapted such that a range counting query can be performed in O(log n) time. Prove the query time bound.**
 
-#### Store point count at each node
-in addition to the splitting value at each node also have the number of points that are in that subtree with the internal node being the root.
+When constructing the range tree, index each leaf node from left to right 0 to n. Traverse the range tree twice, one for the lower bound and upper bound.
+
+For the lower bound:
+1. Traverse the range tree as if we were traversing the a BST to find it's leaf node.
+2. Compare the resulting leaf node with the lower bound
+	1. if the leaf node is greater than or equal to the lower bound
+		1. return the index
+	2. else
+		1. return index + 1
 
 For the upper bound:
-Traverse the tree by going down the right child each time until you come across a node greater than or equal the upper bound.
-1. if the node is equal to the upper bound go to the left child and record the point count number
-2. if the node is greater than the upper bound go the the left child of the parent and record the number
-3. if you reach a leaf
-	1. if it is a right take the number from the parent
-	2. if it is a left leaf take the number from the left child of the grandparent + 1
+1. Traverse the range tree as if we were traversing a BST to its leaf node
+2. compare the resulting node with the upper bound
+	1. if the leaf node is less than or equal to the upper bound
+		1. return the index
+	2. else
+		1. return index - 1
 
-For lower bound:
-Traverse the tree by going down the left children until you reach a node less than or equal to the lower bound
-1. if the node is equal record the point count number of the right + 1
-2. if the node is less than then add the right child of the parent + the next right child that is greater than the lower bound
-3. If you reach a leaf
-	1. 
+After traversing the BST for both the indices of the upper and lower bounds do the following operation to get the number of points that lie in the range:
 
+$(index returned for upper bound) - (index returned for lower bound)$
 
-
+Runtime analysis:
+We are do 2 binary searches on a BST. The runtime of a binary search is O(log n). Therefore, the runtime is $O(log n + log n) \rightarrow O(log n)$.
 ### (b)
 **Using the solution to the 1-dimensional problem, describe how d-dimensional range counting queries can be answered in $O(log^d n)$ time. Prove the query time.**
 
+The solution used for part a can be used to answer part b. Follow the solution from part a for each dimension using the respective range for that dimension. Instead of returning the indices, recursively call the subtree at each index for the next dimension. When we reach the last dimension follow solution by returning the number of number points that lie in the range for that given dimension. As we trace back up the recursion add the points returned together. This will result in the total number of points that within the range.
 
+Runtime analysis:
+The runtime of each binary search at each dimension decreases by log n because we are narrowing the number indices of log n after each dimension. Therefore, the runtime of this algorithm is $O(log^{d}n)$. 
 
 ## 6.2
 **Give an example of a set of n line segments with an order on them that
@@ -98,3 +105,4 @@ A 2-dimensional version can be given as follows: Store a set S of n non-crossing
 **Can you do the same when the segments are allowed to intersect each
 other?**
 
+FINISH
