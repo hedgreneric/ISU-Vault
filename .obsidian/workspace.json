@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/ncurses.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/ncurses.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/ncurses.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/ncurses.md"
+                "file": "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
-    "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
-    "Spring24/COM S 418/ncurses.md",
     "Spring24/COM S 418/Assignments/Assignment5-Hedgren.md",
+    "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
+    "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
+    "images/Pasted image 20240227163649.png",
+    "Spring24/COM S 418/ncurses.md",
     "Spring24/COM S 327/macros.md",
     "Spring24/COM S 327/stdarg.md",
     "[.md",
@@ -164,7 +166,6 @@
     "Spring24/COM S 327/Untitled 1.md",
     "images/Pasted image 20240218161926.png",
     "images/Pasted image 20240218160956.png",
-    "Spring24/COM S 418/Assignments/Assignment4-Hedgren.md",
     "images/Pasted image 20240217150611.png",
     "images/Pasted image 20240217144814.png",
     "images/Pasted image 20240217144036.png",
@@ -178,7 +179,6 @@
     "images/Pasted image 20240208111143.png",
     "images/Pasted image 20240208110733.png",
     "images/Pasted image 20240206113745.png",
-    "images/Pasted image 20240206112806.png",
     "Spring24/COM S 327/Strings.md",
     "Spring24/COM S 418/3 Polygon Triangulation.md",
     "Spring24/STAT 330/Homework/Homework 1 - Hedgren.pdf",
@@ -186,7 +186,6 @@
     "Spring24/COM S 418/1 Computational Geometry.md",
     "Spring24/COM S 418/Assignments/Assignment 2 - Hedgren.pdf",
     "Spring24/COM S 327/Lecture 3.md",
-    "Spring24/COM S 327/Lecture 1.md",
     "Spring24/STAT 330",
     "Spring24/COM S 418/Assignments",
     "Spring24/COM S 418",
