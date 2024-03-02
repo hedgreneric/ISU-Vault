@@ -105,4 +105,21 @@ A 2-dimensional version can be given as follows: Store a set S of n non-crossing
 **Can you do the same when the segments are allowed to intersect each
 other?**
 
-FINISH
+#### Data structure
+For this we can generate a trapezoidal map and store it in a dag.
+![[Pasted image 20240301210600.png]]
+The following is defined for a dag in lecture.
+Query time: O(log n)
+Storage: O(n)
+Preprocess time: O(n log n)
+
+To query for the segment that is hit first by some point p when shot directly up starting from p we can do the following.
+1. use the dag as we normally would to find the face that contains p
+2. if the face is a right child
+	1. get the parent that it is the right child of
+		1. this is the line segment we are looking for
+3. if the face is the left child
+	1. then there is no line segment directly above p
+
+#### Can this be done if segments can intersect?
+Yes, it can as long as the dag or a similar data structure can be made. As long as we can get the face that contains the point, all we have to do is get the segment that is the top line segment for that face.
