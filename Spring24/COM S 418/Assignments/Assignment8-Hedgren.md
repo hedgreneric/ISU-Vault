@@ -69,6 +69,39 @@ This allows for the last point (the center point) to have a degree of $n-1$. All
 ![[Pasted image 20240324175548.png]]
 **Hint: Express the center of the circle as matrix product**
 
+$$
+A = \begin{pmatrix} 2(q_{x} - p_{x}) & 2(q_{y} - p_{y})  \\ 2(r_{x} - p_{x}) & 2(r_{y} - p_{y})  \end{pmatrix} 
+$$
+$$
+b = \begin{pmatrix} q_{x}^{2} - p_{x}^{2} + q_{y}^{2} - p_{y}^{2} & r_{x}^{2} - p_{x}^{2} + r_{y}^{2} - p_{y}^{2}\end{pmatrix}
+$$
+Center of the circle:
+$$
+(c_{x}, c_{y}) = (A^{-1} * b)
+$$
+$$
+(c_{x},c_{y}) \cdot ((s_{x}, s_{y}) - (c_{x}, c_{y})) > 0 
+$$
+This can be simplified down to:
+$$
+s_{x} * det(A) > r_{x}^{2} + r_{y}^{2} - p_{x}^{2} - p_{y}^{2}
+$$
+If this expression is true then s lies within the circle.
 
 ### b
 **The determinant test of part a. can be used to test if an edge in a triangulation is legal. Can you come up with an alternative way to implement this test? Discuss the advantages and/or disadvantages of your method compared to the determinant test.**
+
+#### Method
+1. for the edge $(p, q)$ being tested, identify the two triangles (T1 and T2) that share this edge as a side
+2. For triangle T1 (with points p, q, and r)
+	1. calculate the side lengths of pq, pr, rp
+	2. verify that each side length is greater than the absolute difference of the other two side lengths (ensure $pq > |qr - rp|$)
+3. Perform the side length checks for T2 (with points p, q, and s)
+
+#### Advantages
+- Simpler calculations - this new method doesn't require the more complicated calculation of finding the det
+- Intuitive interpretation - this new method is easier for others to understand. For some understanding what the det is actually doing can be hard
+
+#### Disadvantages
+- Slightly more comparisons - for the new method, rather than doing one calculation we are doing many smaller, but more calculations
+- May not be the most efficient - finding the det can be optimized where the new method is it is more of brute force
