@@ -4,6 +4,10 @@ Eric Hedgren
 ## 8.5
 **Let S be a set of n points in the plane. In this chapter an algorithm was given to determine for every line $l$ through two points of S how many points of S lie strictly above $l$. This was done by dualizing the problem first. Transform the algorithm for the dual problem back to the primal plane, and give the corresponding $O(n^2)$ time algorithm for the given problem. (This exercise should help you to appreciate duality.)**
 
+1. Generate Line Combinations
+	1. Iterate through all possible pairs $(p_{1}, p_{2})$ in S
+	2. for each pair create line $l$ passing $p_{1}$ and $p_{2}$.
+
 ----
 ## 8.7
 **Let R be a set of n red points in the plane, and let B be a set of n blue points in the plane. We call a line $l$ a separator for R and B if $l$ has all points of R to one side and all points of B to the other side. Give a randomized algorithm that can decide in O(n) expected time whether R and B have a separator.**
@@ -20,7 +24,6 @@ The runtime is $O(n)$ because we are iterating through each point once and deter
 **Given a set L of n lines in the plane, give an O(n log n) time algorithm to compute the maximum level of any vertex in the arrangement A(L).**
 
 https://arxiv.org/pdf/2003.00518.pdf
-
 
 -----
 
