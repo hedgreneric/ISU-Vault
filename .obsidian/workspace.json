@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment9-Hedgren.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment10-Hedgren.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "3c1cb2ccec70d48f",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment9-Hedgren.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment10-Hedgren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment9-Hedgren.md",
+                "file": "Spring24/COM S 418/Assignments/Assignment10-Hedgren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring24/COM S 418/Assignments/Assignment9-Hedgren.md"
+                "file": "Spring24/COM S 418/Assignments/Assignment10-Hedgren.md"
               }
             }
           }
@@ -147,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "53f09e85c03c9da8",
+  "active": "6e2389ee396d0a0a",
   "lastOpenFiles": [
-    "Spring24/COM S 418/Assignments/Assignment9-Hedgren 1.md",
     "Spring24/COM S 418/Assignments/Assignment9-Hedgren.md",
+    "Spring24/COM S 418/Assignments/Assignment10-Hedgren.md",
     "Spring24/COM S 418/Assignments/Assignment8-Hedgren.md",
     "Spring24/COM S 418/Assignments/Assignment6-Hedgren.md",
     "Spring24/COM S 418/Assignments/Assignment7-Hedgren.md",
