@@ -8,6 +8,12 @@ Eric Hedgren
 ## 8.7
 **Let R be a set of n red points in the plane, and let B be a set of n blue points in the plane. We call a line $l$ a separator for R and B if $l$ has all points of R to one side and all points of B to the other side. Give a randomized algorithm that can decide in O(n) expected time whether R and B have a separator.**
 
+Consider the dual of R and B. Let $R'$ and $B'$ be the dual of there respective set of points. Let $R'_{d}$ be the set of half-planes from  the lines in R' where they are all directed downward, and conversely $R'_u$ be the set of half-planes from the lines in R' where there are all directed upward. $B'_d$ and $B'_u$ is created in the same way, but for the lines in B'. If $R'_{u} \cap B'_{d} \neq \emptyset$, then there is a separator for R and B, and $B'_{u} \cap R'_{d} \neq \emptyset$ then there is a separator for R and B. On the other hand, if the intersection is empty then there is no separator.
+
+NOTE: only have to find one of the intersections
+
+Runtime Analysis:
+The runtime is $O(n)$ because we are iterating through each point once and determining whether there are any of the other colors in the half-plane, i.e. determining if there is an intersection.
 
 -----
 ## 8.13
@@ -55,6 +61,8 @@ $$
 ## 11.7
 **Define a simple polytope to be a region in 3-space that is topologically equivalent to a ball (but not necessarily convex) and whose boundary consists of planar polygons. Describe how to test in O(n) time whether a point lies inside a simple polytope with n vertices in 3-dimensional space.**
 
+Assumption: lies inside means what it typicall means for 
+
 ```
 Algorithm (polytope, point p):
 	for every vertex v in polytope:
@@ -65,5 +73,25 @@ Algorithm (polytope, point p):
 	return true
 ```
 
+```
+Algorithm (polytope, point p)
+	- Ray cast from p in any direction
+		- choose a random equation/line that has p as a point
+	- Count how many faces the line from the last step intersects with
+	- if number of faces is odd
+		- the point is inside the polytope
+	- else if number of faces is even or 0
+		- the point is outside the polytope
+```
+
 Proof of correctness:
-Ray casting from p and counting the number of faces it intersects works on its on own if the polytope is convex, but because it is not necessarily convex, this algorithm takes care of that.
+By using ray casting and counting the number of faces that the ray passes through, we get an even, odd, or 0 number. 
+
+Cases 1: p is outside the polytope
+If p is outside the polytope when we ray cast we will either hit nothing, 0 faces, or hit the polytope, thus going in. From there we must come out. Therefore, if we go in we must come out which is why if the num of faces is even then we must be outside.
+
+Case 2: p is inside the polytope
+If p is inside then whatever direction we shoot in we will hit at least one face, which is off. In the case that we go back into the polytope we must come back out again, thus why if we are inside, the number of faces is odd.
+
+Runtime analysis:
+I believe that the expected runtime is O(1) because we are just shooting an array out an counting how many faces intersect it. 
