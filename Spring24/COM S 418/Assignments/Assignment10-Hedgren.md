@@ -4,9 +4,29 @@ Eric Hedgren
 ## 8.5
 **Let S be a set of n points in the plane. In this chapter an algorithm was given to determine for every line $l$ through two points of S how many points of S lie strictly above $l$. This was done by dualizing the problem first. Transform the algorithm for the dual problem back to the primal plane, and give the corresponding $O(n^2)$ time algorithm for the given problem. (This exercise should help you to appreciate duality.)**
 
-1. Generate Line Combinations
-	1. Iterate through all possible pairs $(p_{1}, p_{2})$ in S
-	2. for each pair create line $l$ passing $p_{1}$ and $p_{2}$.
+1. Get a list of all the pairs of points creating a line and find their slope and y-intercept - $O(n^2)$ 
+2. Create another list with each index corresponding to the current iteration of the previous list this will be the count list holding the number of points above the current line
+3. For each pair of p or line let this be line_one - O(n)
+	1. For every other pair of p or line let this be line_two - O(n)
+		1. compare line_one and line_two
+		2. if intersect i.e. slopes are not parallel
+			1. if line_one y-intercept < line_two y-intercept
+				1. find the intersection point determine the intersection point y values is less than each line_two points y values
+				2. if so add it to the count list for line_one iteration
+			2. If line_one y-intercept > line_two y-intercept
+				1. find the intersection point determine the intersection point y values is greater than each line_two points y values
+				2. if so add it to the count list for line_one iteration
+		3. If don't intersect i.e. are parallel
+			1. if y value of left most point on line_two > y value of right most point on line_one
+				1. add it to the count
+
+Proof of correctness:
+This algorithm gets all the lines and compares them together. If the lines intersect then there's a chance that regardless of the y-intercept the points may be above line_one. Therefore, we check the intersection point and compare it with the y-values points appropriately. On the other hand, if the lines are parallel we just have to check the y-intercept.
+
+Runtime analysis:
+$$
+O(n^{2}+ (O(n)*O(n))) \rightarrow O(n^2)
+$$
 
 ----
 ## 8.7
@@ -23,8 +43,16 @@ The runtime is $O(n)$ because we are iterating through each point once and deter
 ## 8.13
 **Given a set L of n lines in the plane, give an O(n log n) time algorithm to compute the maximum level of any vertex in the arrangement A(L).**
 
-https://arxiv.org/pdf/2003.00518.pdf
+1. sort the points by their polar angles O(n log n)
+2. Sweep Line Algorithm with Monotone Chains: Utilize a sweep line algorithm combined with monotone chains to compute the arrangement A(L). This algorithm is more efficient than traditional sweep line algorithms - O(n log n).
+3. Maintain vertical slabs.: These slabs can help computing levels
+4. While doing the sweep line keep track of the levels, use the vertical slabs to help compute the levels for each vertex
+5. Iterate through all the vertices and determine the vertex with the greatest level - O(n)
 
+Runtime analysis:
+$$
+O(n log n + n log n + n) \rightarrow O(n log n)
+$$
 -----
 
 ## 8.14
