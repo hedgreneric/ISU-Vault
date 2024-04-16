@@ -25,6 +25,14 @@ Eric Hedgren
 ## 13.1
 **Let R be a robotic arm with a fixed base and seven links. The last joint of R is a prismatic joint, the other ones are revolute joints. Give a set of parameters that determines a placement of R. What is the dimension of the configuration space resulting from your choice of parameters?**
 
+Revolute:
+$\theta_{1}...\theta_{6}$, the 6 revolute joints rotate at an angle around the joint. This angle is theta and adds 1-dimension to the configuration space for each.
+
+Prismatic:
+p, the prismatic joint slides forward and backwards. This adds 1-dimension to the configuration space.
+
+Therefore, the following are all parameters to determine the placement of R: $\theta_{1}...\theta_{6} + p$ = 7 dimensions in the configuration space.
+
 
 
 ## 13.2
