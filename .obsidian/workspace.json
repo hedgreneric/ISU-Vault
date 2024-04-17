@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "3c1cb2ccec70d48f",
@@ -146,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6e2389ee396d0a0a",
+  "active": "53f09e85c03c9da8",
   "lastOpenFiles": [
     "Spring24/COM S 418/Assignments/Assignment10-Hedgren.md",
     "Spring24/COM S 418/Assignments/Assignment11-Hedgren.md",
