@@ -10,20 +10,20 @@ Eric Hedgren
 - Therefore, h* lies on p*
 ### b
 **A point p lies above h if and only if h∗ lies above p∗ .**
-- Lying above a plane is determined by the sign of the distance of the point from the plane. If h∗h∗ lies above p∗p∗, then the point lies above the original plane, and vice versa
+- Lying above a plane is determined by the sign of the distance of the point from the plane. If h∗h∗ lies above p*, then the point lies above the original plane, and vice versa
 ### c
 **A point p ∈ P is a vertex of UH(P) if and only if p∗ appears on LE(P∗ ).**
-- By the duality transformation, p∗p∗ represents a plane in 3-space.
-- If pp is a vertex of UH(P)UH(P), then p∗p∗ corresponds to a supporting plane for the upper convex hull.
-- Supporting planes for the upper convex hull correspond to points on the lower envelope of the dual set of planes P∗P∗. Therefore, p∗p∗ appears on LE(P∗)LE(P∗).
+- By the duality transformation, p* represents a plane in 3-space.
+- If pp is a vertex of UH(P), then p* corresponds to a supporting plane for the upper convex hull.
+- Supporting planes for the upper convex hull correspond to points on the lower envelope of the dual set of planes P*. Therefore, p* appears on LE(P*).
 ### d
 **A segment pq is an edge of UH(P) if and only if p∗ and q∗ share an edge on LE(P∗ ).**
-- If pqpq is an edge of UH(P)UH(P), then there exists a supporting plane that contains both pp and qq.
-- This supporting plane corresponds to a shared edge on LE(P∗)LE(P∗), as p∗p∗ and q∗q∗ lie on this edge.
+- If pq is an edge of UH(P), then there exists a supporting plane that contains both p and q.
+- This supporting plane corresponds to a shared edge on LE(P*), as p* and q* lie on this edge.
 ### e
 **Points p1 , p2 , . . . , pk are the vertices of a facet f of UH(P) if and only if p1 ∗ , p2 ∗ , . . . , pk ∗ support facets of LE(P∗ ) that share a common vertex.**
-- If p1,p2,...,pkp1​,p2​,...,pk​ are the vertices of a facet ff of UH(P)UH(P), then there exists a supporting plane that contains all of these points.
-- This supporting plane corresponds to supporting facets on LE(P∗)LE(P∗), as p1∗,p2∗,...,pk∗p1∗​,p2∗​,...,pk∗​ lie on facets that share a common vertex.
+- If p1,p2,...,pk are the vertices of a facet ff of UH(P), then there exists a supporting plane that contains all of these points.
+- This supporting plane corresponds to supporting facets on LE(P*), as p1*,p2*,...,pk*​ lie on facets that share a common vertex.
 
 ## 13.1
 **Let R be a robotic arm with a fixed base and seven links. The last joint of R is a prismatic joint, the other ones are revolute joints. Give a set of parameters that determines a placement of R. What is the dimension of the configuration space resulting from your choice of parameters?**
