@@ -5,12 +5,12 @@ Eric Hedgren
 **In this exercise you have to work out the details of a 3-dimensional duality transformation. Given a point p := (px , py , pz ) in R3 , let p∗ be the plane z = px x + py y − pz . For a non-vertical plane h, define h∗ such that (h∗ )∗ = h. Give a definition of the upper convex hull UH(P) of a set of points P and the lower envelope LE(H) of a set H of planes in 3-space, similar to the way they were defined for the planar case in Section 11.4.**
 ### a
 **A point p lies on a plane h if and only if h∗ lies on p∗ .**
-- If a point pp lies on a plane hh, then the equation of the plane holds true for the coordinates of p, $z=p_{x}x+p_{y}y-p_z$
-- substitute p* in for the h* equation, $z=p_{x}^*x+p_{y}^*y-p_z^*$
+- If a point pp lies on a plane h, then the equation of the plane holds true for the coordinates of p, $z=p_{x}x+p_{y}y-p_z$
+- Substitute p* in for the h* equation, $z=p_{x}^*x+p_{y}^*y-p_z^*$
 - Therefore, h* lies on p*
 ### b
 **A point p lies above h if and only if h∗ lies above p∗ .**
-- Lying above a plane is determined by the sign of the distance of the point from the plane. If h∗h∗ lies above p*, then the point lies above the original plane, and vice versa
+- Lying above a plane is determined by the sign of the distance of the point from the plane. If h* lies above p*, then the point lies above the original plane, and vice versa
 ### c
 **A point p ∈ P is a vertex of UH(P) if and only if p∗ appears on LE(P∗ ).**
 - By the duality transformation, p* represents a plane in 3-space.
@@ -22,7 +22,7 @@ Eric Hedgren
 - This supporting plane corresponds to a shared edge on LE(P*), as p* and q* lie on this edge.
 ### e
 **Points p1 , p2 , . . . , pk are the vertices of a facet f of UH(P) if and only if p1 ∗ , p2 ∗ , . . . , pk ∗ support facets of LE(P∗ ) that share a common vertex.**
-- If p1,p2,...,pk are the vertices of a facet ff of UH(P), then there exists a supporting plane that contains all of these points.
+- If p1,p2,...,pk are the vertices of a facet f of UH(P), then there exists a supporting plane that contains all of these points.
 - This supporting plane corresponds to supporting facets on LE(P*), as p1*,p2*,...,pk*​ lie on facets that share a common vertex.
 
 ## 13.1
