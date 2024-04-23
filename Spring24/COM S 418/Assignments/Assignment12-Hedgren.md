@@ -3,7 +3,7 @@ Eric Hedgren
 
 ## 13.4
 **Draw the Minkowski sum P1 ⊕ P2 for the case where**
-![[Pasted image 20240423095334.png]]
+![[Pasted image 20240423102621.png]]
 ## 13.6
 **Prove Observation 13.4.**
 Suppose we are looking at a 2D plane, with x and y dimensions.
