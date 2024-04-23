@@ -59,7 +59,7 @@ Therefore, the visibility graph constructed with common tangents provides all ne
 	- Start at the rightmost vertex of one polygon and the leftmost vertex of the other polygon.
 	- Move clockwise around the first polygon and counterclockwise around the second polygon.
 	- If the line segment between the two vertices does not cross the interiors, it's a valid tangent.
-- **Validate Tangency**:
+- **Validate Tangent**:
     - A valid tangent should not cross the interiors of either polygon.
     - You can determine this using cross product
 **Runtime analysis**
